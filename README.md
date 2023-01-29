@@ -15,7 +15,7 @@ We got this site as our construct week project, a clone of Tata-1mg.
   
   Original Website Link :- https://www.1mg.com/
   
-  Netlify Link :- https://1mg-clone-react.netlify.app/
+  Netlify Link :- https://onemg-express-clone.netlify.app/
   
 # Tech Stacks:- 
         HTML, CSS, JavaScripts, React, Redux, JSON 
