@@ -19,7 +19,7 @@ const SingleProduct = () => {
   const [price, setPrice] = useState(state.price);
   const { id } = useParams();
   useEffect(() => {
-    fetch(`https://onemg-clone-server.onrender.com/products/${id}`)
+    fetch(`https://onemg-express-server.onrender.com/medicines/${id}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

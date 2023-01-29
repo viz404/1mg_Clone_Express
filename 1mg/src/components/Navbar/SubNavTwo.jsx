@@ -12,7 +12,7 @@ import axios from "axios";
 const fetchData = async (search, setter) => {
   try {
     const { data } = await axios.get(
-      `https://onemg-clone-server.onrender.com/products?q=${search}`
+      `https://onemg-express-server.onrender.com/medicines?search=${search}`
     );
     const result = data.map((element) => element.title);
     setter([search, ...result]);

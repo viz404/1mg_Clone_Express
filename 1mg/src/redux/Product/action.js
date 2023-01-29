@@ -31,7 +31,7 @@ const fetchData = (category) => {
     try {
       setLoading(dispatch);
       const { data } = await axios.get(
-        `https://onemg-clone-server.onrender.com/products?category=${category}`
+        `https://onemg-express-server.onrender.com/medicines?category=${category}`
       );
       setSuccess(dispatch, data);
     } catch (error) {
@@ -45,7 +45,7 @@ const searchData = (query) => {
     try {
       setLoading(dispatch);
       const { data } = await axios.get(
-        `https://onemg-clone-server.onrender.com/products?q=${query}`
+        `https://onemg-express-server.onrender.com/medicines?search=${query}`
       );
       setSearch(dispatch, data);
     } catch (error) {
