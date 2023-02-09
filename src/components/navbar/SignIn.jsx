@@ -13,6 +13,12 @@ import styles from "../../styles/navbar/SignIn.module.css";
 import { setCartSuccess } from "../../redux/cart/cartActions";
 import Alert from "../common/Alert";
 
+const BASE_URL = import.meta.env.VITE_SERVER_BASE_URL;
+
+const OAUTH_URL = `https://accounts.google.com/o/oauth2/v2/auth?client_id=711499022977-4fafqra7jojd83q2ud53c8cqkdmbe56h.apps.googleusercontent.com&redirect_uri=${
+  BASE_URL + "/api/oauth/google"
+}&response_type=code&prompt=consent&scope=profile%20email`;
+
 const SignIn = () => {
   const [loginSelected, setSelect] = useState(true);
   const [blur, setBlur] = useState(false);
@@ -166,7 +172,7 @@ const SignIn = () => {
                 Submit
               </button>
               <div className={styles["google-container"]}>
-                <a href="https://accounts.google.com/o/oauth2/v2/auth?client_id=711499022977-4fafqra7jojd83q2ud53c8cqkdmbe56h.apps.googleusercontent.com&redirect_uri=http://localhost:8080/api/oauth/google&response_type=code&prompt=consent&scope=profile%20email">
+                <a href={OAUTH_URL}>
                   <p>Sign in with Google</p>
                   <img
                     src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
