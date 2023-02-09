@@ -1,0 +1,78 @@
+.address {
+  padding: 2rem;
+}
+
+.container {
+  width: fit-content;
+  margin: auto;
+}
+
+.caption {
+  padding: 1rem 0;
+}
+
+.address_container {
+  width: 500px;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0 silver;
+}
+
+.address_container :is(textarea, input) {
+  outline: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 1px solid silver;
+  width: 100%;
+  font-size: small;
+  color: black !important;
+}
+
+.address_item > textarea {
+  max-width: 100%;
+  max-height: 50px;
+  resize: none;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.element {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.address_item:last-child {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: right;
+}
+
+.address_item:last-child > button {
+  padding: 7px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid tomato;
+  background-color: tomato;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .address_container {
+    width: 100%;
+  }
+}

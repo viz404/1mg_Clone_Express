@@ -1,0 +1,29 @@
+.header {
+  padding-top: 1rem;
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+select {
+  outline: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .action {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

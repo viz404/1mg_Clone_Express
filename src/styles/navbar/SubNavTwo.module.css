@@ -1,0 +1,153 @@
+.subnavtwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.left > div {
+  background-color: #f1f4f6;
+}
+
+.city {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.item:first-child {
+  color: rgb(84, 84, 84);
+}
+
+.item:last-child {
+  margin-left: auto;
+  color: rgb(160, 160, 160);
+}
+
+.item:nth-child(2) {
+  font-weight: bold;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: small;
+  position: relative;
+}
+
+.search input {
+  color: black;
+}
+
+.search > .button {
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+}
+
+.input > input {
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: inherit;
+}
+
+.list {
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background-color: silver;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0 grey;
+}
+
+.listItem:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.listItem:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.listItem {
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: small;
+}
+
+.rightitem:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.rightitem > img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.rightitem > button {
+  background-color: #f56c60;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+  .subnavtwo {
+    justify-content: center;
+  }
+  .right {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  :is(.item:first-child, .item:last-child) {
+    display: none;
+  }
+  .city {
+    width: fit-content;
+  }
+  .search {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 460px) {
+  .search {
+    width: fit-content;
+  }
+}

@@ -1,0 +1,23 @@
+.breadcrum {
+  display: flex;
+  gap: 5px;
+  font-size: 0.8rem;
+  color: hsl(5, 97%, 55%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.black {
+  color: black;
+}
+
+@media (max-width: 800px) {
+  .breadcrum {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

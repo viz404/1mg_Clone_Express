@@ -1,0 +1,29 @@
+.mainbanner {
+  background-color: white;
+}
+
+.top {
+  display: flex;
+  border-bottom: 2px solid #d4d4d4;
+}
+
+.carousal {
+  width: 70%;
+}
+
+.banner {
+  width: 30%;
+}
+
+.banner > img {
+  display: block;
+  height: 100%;
+  object-fit: fill;
+}
+
+.bottom {
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+  border-bottom: 2px solid #d4d4d4;
+}

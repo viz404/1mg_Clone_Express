@@ -1,0 +1,58 @@
+.main {
+  background-color: #f6f6f6;
+  min-height: 60vh;
+}
+
+.product {
+  max-width: 1310px;
+  margin: 1rem auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.filterWrapper {
+  width: 15%;
+}
+
+.productWrapper {
+  width: 85%;
+}
+
+.allFilters {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background-color: #d4d4d4;
+}
+
+.allFilters > div {
+  background-color: white;
+  padding: 10px;
+}
+
+.header {
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .filterWrapper {
+    width: 20%;
+  }
+
+  .productWrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .product {
+    flex-direction: column;
+  }
+  .filterWrapper {
+    width: 100%;
+  }
+
+  .productWrapper {
+    width: 100%;
+  }
+}

@@ -1,0 +1,71 @@
+.App {
+  width: 450px;
+  border-radius: 5px;
+  margin: 5rem auto;
+  background-color: white;
+  padding: 2rem 10px;
+  box-shadow: 1px 1px 5px 0 silver;
+}
+
+.App :is(h1, p) {
+  padding-left: 10px;
+  align-self: center;
+}
+.App p {
+  text-align: center;
+  margin-top: 10px;
+}
+.App > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+}
+.form > label {
+  margin-top: 20px;
+}
+.form > input {
+  padding: 10px;
+}
+.form {
+  padding: 20px;
+}
+.details {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.details input {
+  width: 100px;
+  padding: 8px;
+}
+.details > div {
+  display: flex;
+  flex-direction: column;
+}
+.details > div:nth-child(1) > div {
+  display: flex;
+  gap: 5px;
+}
+.submit_btn {
+  background-color: rgb(27, 201, 232);
+  color: white;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 1rem;
+  }
+  .App {
+    width: 100%;
+  }
+}

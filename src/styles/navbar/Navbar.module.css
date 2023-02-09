@@ -1,0 +1,23 @@
+.navbar {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.navbar > div {
+  background-color: white;
+}
+
+.navbar > div:last-child {
+  border-bottom: 1px solid silver;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+p {
+  margin-bottom: 0 !important;
+}

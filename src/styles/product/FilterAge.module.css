@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.list {
+  display: flex;
+  gap: 5px;
+  font-size: small;
+}
+
+.list > :is(input, label) {
+  cursor: pointer;
+}
+
+.search-bar > input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid silver;
+  outline: none;
+}
+
+.brand-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 100px;
+  overflow-y: auto;
+}

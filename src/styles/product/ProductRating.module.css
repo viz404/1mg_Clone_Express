@@ -1,0 +1,14 @@
+.rating {
+  background-color: #1aab2a;
+  display: flex;
+  width: fit-content;
+  gap: 5px;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.rating > p {
+  font-size: 0.9rem;
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,19 @@
+body {
+  background-color: #f1f4f6;
+}
+
+.home img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.adone {
+  padding: 2rem 5rem;
+}
+
+.caption {
+  padding: 10px 3rem;
+  font-size: 1.5rem;
+}

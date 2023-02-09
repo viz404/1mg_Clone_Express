@@ -1,0 +1,53 @@
+.footer-container {
+  margin-top: auto;
+  padding: 2rem;
+  background-color: #fffcf8;
+}
+
+.section-one {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.section-one-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-one-item-elements {
+  color: #666;
+  font-size: small;
+}
+
+.section-one-image-container {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.section-one-image-container > img {
+  height: 25px;
+  width: 25px;
+}
+
+.section-one-item-elements button {
+  background-color: #ff6f61;
+  border-radius: 5px;
+  padding: 0.7rem 1.5rem;
+  margin: 10px 0;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .section-one {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

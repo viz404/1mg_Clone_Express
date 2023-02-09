@@ -1,0 +1,97 @@
+.subnavone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 1rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.header {
+  height: 30px;
+}
+
+.header img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.routes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.item span {
+  font-size: 0.7rem;
+  display: inline-block;
+  background-color: #fb685a;
+  color: white;
+  padding: 2px 3px;
+  border-radius: 2px;
+  position: relative;
+  bottom: 5px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: small;
+}
+
+.login {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login > button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cartcontainer {
+  height: 25px;
+}
+
+.cartcontainer img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1250px) {
+  .subnavone {
+    flex-direction: column;
+  }
+
+  .routes {
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .routes {
+    max-width: 70vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .routes {
+    max-width: 50vw;
+  }
+}

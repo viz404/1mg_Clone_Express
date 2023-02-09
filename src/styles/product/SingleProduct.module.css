@@ -1,0 +1,66 @@
+.product {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 5px 0 silver;
+}
+
+.image {
+  height: 200px;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.image > .img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.desc {
+  font-size: 0.7rem;
+  color: rgb(134, 134, 134);
+}
+
+.discount {
+  display: flex;
+  gap: 5px;
+  font-size: 0.7rem;
+  color: rgb(134, 134, 134);
+}
+
+.discount > span {
+  text-decoration: line-through;
+}
+
+.discount > p:last-child {
+  color: #1aab2a;
+}
+
+.mrp {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mrp span {
+  font-size: 0.8rem;
+  color: rgb(134, 134, 134);
+}
+
+.mrp > button {
+  background-color: white;
+  color: tomato;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

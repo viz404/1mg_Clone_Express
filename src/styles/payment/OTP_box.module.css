@@ -1,0 +1,50 @@
+.OTP_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.OTP_div {
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: aliceblue;
+  margin-top: 40vh;
+}
+.OTP_form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.OTP_form * {
+  margin-top: 10px;
+}
+.OTP_form > input {
+  padding: 8px;
+  /* border: none; */
+  border-radius: 5px;
+}
+.OTP_btn {
+  background-color: rgb(54, 225, 39);
+  color: black;
+  padding: 4px;
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  align-self: flex-end;
+}
+
+@media (max-width: 600px) {
+  .OTP_container {
+    padding: 1rem;
+  }
+  .OTP_div {
+    width: 100%;
+  }
+}

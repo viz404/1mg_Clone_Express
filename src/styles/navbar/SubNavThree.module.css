@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 10px 1rem;
+  flex-wrap: wrap;
+}
+
+.item > a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.item p {
+  font-size: small;
+}
+
+.item svg {
+  font-size: 1.2rem;
+}
