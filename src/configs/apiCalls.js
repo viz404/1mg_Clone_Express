@@ -14,25 +14,20 @@ export const getSingleProduct = async (id) => {
   }
 };
 
-export const getUserDetails = async () => {
+export const getUserDetails = async ({ token }) => {
   try {
-    const cookie = document.cookie;
-
-    let token = JSON.parse(localStorage.getItem("onemg_session")) || "";
-
-    if (token == "") {
-      token = cookie.split("=").pop();
-
-      localStorage.setItem("onemg_session", JSON.stringify(token));
+    let temp_token = token;
+    if (token == undefined) {
+      temp_token = JSON.parse(localStorage.getItem("onemg_session")) || "";
     }
 
-    if (token == "") {
+    if (temp_token == "") {
       throw new Error("user not logged in");
     }
 
     const response = await fetch(BASE_URL + "/api/user/getuserdetails", {
       headers: {
-        authorization: `Bearer ${token}`,
+        authorization: `Bearer ${temp_token}`,
       },
     });
 
@@ -41,6 +36,8 @@ export const getUserDetails = async () => {
     if (status == false) {
       throw new Error(message);
     }
+
+    localStorage.setItem("onemg_session", JSON.stringify(temp_token));
 
     return {
       user,

@@ -12,6 +12,7 @@ import { logInAction, logOutAction } from "../../redux/user/userActions";
 import styles from "../../styles/navbar/SignIn.module.css";
 import { setCartSuccess } from "../../redux/cart/cartActions";
 import Alert from "../common/Alert";
+import { useSearchParams } from "react-router-dom";
 
 const BASE_URL = import.meta.env.VITE_SERVER_BASE_URL;
 
@@ -24,6 +25,7 @@ const SignIn = () => {
   const [blur, setBlur] = useState(false);
   const [user, setUser] = useState({});
   const [refresh, setRefresh] = useState(false);
+  const [searchParams] = useSearchParams();
   const [popup, setpopup] = useState({
     status: false,
     message: "",
@@ -33,8 +35,9 @@ const SignIn = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    const token = searchParams.get("token");
     const fetchUser = async () => {
-      const { user, status } = await getUserDetails();
+      const { user, status } = await getUserDetails({ token });
 
       if (status) {
         dispatch(logInAction(user));
