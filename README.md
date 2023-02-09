@@ -17,6 +17,10 @@ We got this site as our construct week project, a clone of Tata-1mg.
   
   Netlify Link :- https://onemg-express-clone.netlify.app/
   
+  Backend Repository Link: https://github.com/viz404/1mg-express-server
+  
+  Backend Deployed Link: https://clean-crab-sneakers.cyclic.app/
+  
 # Tech Stacks:- 
         HTML, CSS, JavaScripts, React, Redux, JSON 
         
