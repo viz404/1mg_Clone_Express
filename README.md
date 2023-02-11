@@ -13,7 +13,6 @@ Tata 1mg is consumer health platform. This site offer a various medicines of alm
 
 We got this site as our construct week project, a clone of Tata-1mg.
   
-  Original Website Link :- https://www.1mg.com/
   
   Netlify Link :- https://onemg-express-clone.netlify.app/
   
