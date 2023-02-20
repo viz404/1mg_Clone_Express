@@ -21,7 +21,9 @@ const FilterBrand = () => {
   const [query, setQuery] = useState("");
 
   const data = removeDuplicate(
-    filters.brands?.filter((e) => e.includes(query)) || []
+    filters.brands?.filter((e) =>
+      e.toLowerCase().includes(query.toLowerCase())
+    ) || []
   );
 
   const [searchParams, setSearchParams] = useSearchParams();
