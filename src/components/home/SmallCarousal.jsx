@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import styles from "../../styles/home/SmallCarousal.module.css";
 
 const SmallCarousal = ({ data }) => {
@@ -5,14 +7,18 @@ const SmallCarousal = ({ data }) => {
     <div className={styles.smallcarousal}>
       <div className={styles.container}>
         {data.map((element, index) => (
-          <div className={styles.item} key={index}>
+          <Link
+            to={element.redirect || "/products"}
+            className={styles.item}
+            key={index}
+          >
             <div className={styles.image}>
               <img src={element.image} />
             </div>
             <div className={styles.title}>
               <p>{element.title}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <div className={styles.button}>
