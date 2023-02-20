@@ -1,7 +1,7 @@
 import { useSearchParams, Link } from "react-router-dom";
 import styles from "../../styles/product/ProductWrapper.module.css";
 
-import BreadCrum from "../Product/BreadCrum";
+import BreadCrum from "./BreadCrum";
 import Banner from "./Banner";
 import ProductContainer from "./ProductContainer";
 
