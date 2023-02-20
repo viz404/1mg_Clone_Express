@@ -1,6 +1,7 @@
 .main {
   background-color: #f6f6f6;
   min-height: 60vh;
+  padding: 0 10px;
 }
 
 .product {
