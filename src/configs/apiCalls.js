@@ -9,7 +9,7 @@ export const getSingleProduct = async (id) => {
     }
     return { data, status: true };
   } catch (error) {
-    console.log(error);
+    // console.log(error.message);
     return { status: false };
   }
 };
@@ -44,7 +44,7 @@ export const getUserDetails = async ({ token }) => {
       status,
     };
   } catch (error) {
-    console.log(error.message);
+    // console.log(error.message);
     return {
       status: false,
     };
@@ -71,7 +71,7 @@ export const registerUser = async (payload) => {
       status: true,
     };
   } catch (error) {
-    console.log(error.message);
+    // console.log(error.message);
     return {
       status: false,
     };
@@ -100,7 +100,7 @@ export const loginUser = async (payload) => {
       status: true,
     };
   } catch (error) {
-    console.log(error.message);
+    // console.log(error.message);
     return {
       status: false,
     };
@@ -245,7 +245,7 @@ export const deleteCart = async () => {
 
     return { status, message };
   } catch (error) {
-    console.log(error);
+    // console.log(error.message);
     return { status: false };
   }
 };

@@ -59,7 +59,7 @@ export const fetchCategory = (
       const { data, status, message } = await response.json();
 
       if (status == false) {
-        console.log(message);
+        // console.log(message);
         throw new Error();
       }
 
@@ -109,7 +109,7 @@ export const fetchSearchData = (
       const { data, status, message } = await response.json();
 
       if (status == false) {
-        console.log(message);
+        // console.log(message);
         throw new Error();
       }
 
@@ -131,7 +131,7 @@ export const setFilters = ({ category, search }) => {
         const { data, status, message } = await response.json();
 
         if (status == false) {
-          console.log(message);
+          // console.log(message);
           throw new Error();
         }
 
@@ -147,7 +147,7 @@ export const setFilters = ({ category, search }) => {
         const { data, status, message } = await response.json();
 
         if (status == false) {
-          console.log(message);
+          // console.log(message);
           throw new Error();
         }
 
@@ -157,7 +157,7 @@ export const setFilters = ({ category, search }) => {
         });
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error.message);
     }
   };
 };
