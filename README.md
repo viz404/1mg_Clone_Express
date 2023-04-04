@@ -21,7 +21,7 @@ We got this site as our construct week project, a clone of Tata-1mg.
   Backend Deployed Link: https://clean-crab-sneakers.cyclic.app/
   
 # Tech Stacks:- 
-        HTML, CSS, JavaScripts, React, Redux, JSON 
+        HTML, CSS, JavaScript, React, Redux, JSON 
         
 # Process Flow:-
         Landing Page -> Click on any one of the category mentioned below Navbar -> Product Page -> Single Product Page -> Cart -> Address and details -> Payment Page
